@@ -54,6 +54,9 @@
             }
             return *this;
         }
+        Car* Matrix::operator[](int row){
+            return m_matrix[row];
+        }
         Matrix::~Matrix(){
             for(int i=0;i<m_rows;i++){
                 delete[] m_matrix[i];

@@ -29,7 +29,7 @@ public:
 	void set(int row,int col,const Car& car);
 	Car& get(int row,int col);
 	friend  std::ostream& operator <<(std::ostream& os,const Matrix& matrix);
-
+	Car* operator[](int row);
 };
 
 #endif //MATRIX_H
